@@ -1,0 +1,26 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "react/display-name": "off",
+    "import/order": [
+      "warn",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          ["sibling", "index"]
+        ],
+        "pathGroups": [
+          {
+            "pattern": "./styled",
+            "group": "index",
+            "position": "after"
+          }
+        ],
+        "newlines-between": "always"
+      }
+    ]
+  }
+}
